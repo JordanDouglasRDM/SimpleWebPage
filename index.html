@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="author" content="Jordan">
+    <meta name="description" content="HTML Fatec">
+    <meta name="keywords" content="Vazio">
+    <title>P2 - Micro-Info</title>
+    <link rel="icon" type="image/x-icon" href="pictures/rolo-de-filme.png">
+
+    <style>
+        body {
+            background-image: url("pictures/fundo.jpg");
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-size: cover;
+            color: white;
+            margin: 0;
+            position: relative;
+            top: 35px;
+            overflow-x: hidden;
+        }
+
+        figure {
+            float: left;
+            border: 2px solid white;
+            border-radius: 10px;
+            text-align: justify;
+            width: 215px;
+            height: 395px;
+            background-color: white;
+            color: black;
+            padding: 1px 4px;
+
+        }
+
+        ul {
+            list-style-type: none;
+            width: 100%;
+            z-index: 1;
+            text-align: center;
+            position: fixed;
+            display: block;
+            background: #FF9912;
+            margin: 0;
+            padding: 0;
+            top: 0;
+            box-sizing: border-box;
+        }
+
+        li {
+            display: inline-block;
+            text-align: center;
+            font-size: 150%;
+            padding: 5px 5px;
+            margin: -1.85px;
+            border-right: 2px solid black;
+            box-sizing: border-box;
+        }
+
+        li:hover, a:hover {
+            background-color: black;
+            transition: 0.65s;
+            text-decoration: none;
+            color: white;
+            
+        }
+
+        figure:hover {
+            background-color: rgb(173, 173, 173);
+            border: 2px solid white;
+            color: rgb(23, 23, 88);
+            transition: 0.5s;
+
+        }
+
+        li:last-child {
+            border-right: none;
+        }
+
+
+        a {
+            text-decoration: none;
+            color: #333;
+            padding: 6px 0px;
+            box-sizing: border-box;
+        }
+
+        h2 {
+            text-align: center;
+            display: inline-block;
+            width: 100%;
+            background: #FF9912;
+            padding: 3px;
+            color:#333;
+
+        }
+
+        fieldset {
+            border: none;
+            margin-left: 0%;
+        }
+
+        .clear {
+            clear: both;
+        }
+
+        form {
+            color: black;
+            margin-top: 65px;
+            margin-left: 42%;
+        }
+
+        label,
+        legend,
+        fieldset p {
+            color: white;
+        }
+
+        p,
+        label:not(.font) {
+            font-size: 140%;
+        }
+
+        .font {
+            font-size: 100%;
+        }
+
+        input[type=text],
+        input[type=email],
+        input[type=password] {
+            width: 25%;
+            transition: width 0.45s ease-in-out;
+
+        }
+
+        input[type=text]:focus {
+            width: 35%;
+        }
+
+        input[type=email]:focus {
+            width: 30%;
+        }
+
+        p,
+        label {
+            margin-bottom: 2%;
+        }
+
+        .bt:active {
+            position: relative;
+            top: 2px;
+        }
+        .bt-lj {
+            border-color: #eb9b48;
+            background: linear-gradient(to bottom, #f7d6b3 5%, #eb9b48 100%);
+            box-shadow: inset 0px 1px 0px 0px #fdf7f0;
+            color: #333;
+            text-shadow: 0px 1px 0px #ffee66;
+            border-radius: 5px;
+            padding: 2px 4px;
+            margin-right: 10px;
+        }
+
+        .bt-lj:hover {
+            background: linear-gradient(to bottom, #eb9b48 5%, #f7d6b3 100%);
+        }
+
+        input[type=email],
+        input[type=text],
+        input[type=date],
+        input[type=password] {
+            border-radius: 5px;
+            box-sizing: border-box;
+            padding: 5px 2px;
+            border: 1.5px solid black;
+            background-color: rgb(174, 174, 174);
+        }
+
+        select {
+            padding: 5px 0.01px;
+            text-align: center;
+            background-color: rgb(174, 174, 174);
+            border: 1.5px solid black;
+            border-radius: 5px;
+        }
+
+        textarea {
+            text-align: justify;
+            font-family: Comic Sans MS, Comic Sans, cursive;
+            width: auto;
+            background-color: rgb(174, 174, 174);
+            border: 1.5px solid black;
+            border-radius: 5px;
+            resize: none;
+        }
+    </style>
+</head>
+
+<body>
+    <ul class="formata">
+        <li><a href="">Home</a></li>
+        <li><a href="#morv">Mais Visitados</a></li>
+        <li><a href="#seman">Escolha da Semana</a></li>
+        <li><a href="#lanc">Lançamentos</a></li>
+        <li><a href="#cad">Cadastro</a></li>
+    </ul>
+    <figure>
+        <img src="pictures/flash.jpg" alt="Imagem da capa do filme the flash.">
+        <figcaption>Acompanhe as aventuras do homem mais veloz do planeta, o cientista da Central City Police Barry
+            Allen, que após um trágico acidente adquire o poder...</figcaption>
+    </figure>
+    <figure id="morv">
+        <img src="pictures/matrix.jpg" alt="Imagem da capa do filme the flash.">
+        <figcaption>Da visionária realizadora Lana Wachowski chega-nos MATRIX RESURRECTIONS o tão aguardado 4º filme do
+            inovador franchise que redefiniu o género.
+        </figcaption>
+    </figure>
+    <figure>
+        <img src="pictures/adam.jpg" alt="Imagem da capa do filme the flash.">
+        <figcaption>Um viajante do tempo volta ao ano de 2022 por acidente e acaba se encontrando com seu eu mais novo.
+        </figcaption>
+    </figure>
+    <figure>
+        <img src="pictures/unch.jpg" alt="Imagem da capa do filme the flash.">
+        <figcaption>Nathan Drake e seu parceiro canastrão Victor "Sully" Sullivan embarcam em uma perigosa busca para
+            encontrar o maior tesouro jamais encontrado.</figcaption>
+    </figure>
+    <figure>
+        <img src="pictures/top.jpg" alt="Imagem da capa do filme the flash.">
+        <figcaption>Depois de mais de 30 anos de serviço como um dos principais aviadores da Marinha, Pete "Maverick"
+            Mitchell está de volta, rompendo os limites.</figcaption>
+    </figure>
+    <figure id="lanc">
+        <img src="pictures/jur.jpeg" alt="Imagem da capa do filme the flash.">
+        <figcaption>A sequência do filme Jurassic World, a sexta parcela da série Jurassic Park e o terceiro filme da
+            série Jurassic World.
+        </figcaption>
+    </figure>
+    <figure>
+        <img src="pictures/norte.jpeg" alt="Imagem da capa do filme the flash.">
+        <figcaption>O Príncipe Amleth está prestes a se tornar um homem quando seu tio assassina seu pai e sequestra sua
+            mãe. </figcaption>
+    </figure>
+    <figure>
+        <img src="pictures/buzz.jpg" alt="Imagem da capa do filme the flash.">
+        <figcaption>Nesta aventura de ficção científica cheia de ação, conhecemos a origem definitiva de Buzz Lightyear
+            (voz de Chris Evans)...</figcaption>
+    </figure>
+    <figure>
+        <img src="pictures/ava.jpeg" alt="Imagem da capa do filme the flash.">
+        <figcaption>Avatar: The Way of Water é um futuro filme épico de ficção científica americano co-escrito,
+            co-editado, co-produzido e dirigido por James Cameron...</figcaption>
+    </figure>
+    <figure>
+        <img src="pictures/mini.jpg" alt="Imagem da capa do filme the flash.">
+        <figcaption>Nos anos 1970, o jovem Gru tenta entrar para um time de supervilões, mas a entrevista é desastrosa e
+            ele e seus...
+        </figcaption>
+    </figure>
+    <figure id="seman">
+        <img src="pictures/tel.jpg" alt="Imagem da capa do filme the flash.">
+        <figcaption>Um garoto sequestrado por um sádico serial killer encontra um telefone antigo preto. Quando o
+            aparelho toca, o garoto consegue ouvir a voz das...</figcaption>
+    </figure>
+    <figure>
+        <img src="pictures/thor.jpg" alt="Imagem da capa do filme the flash.">
+        <figcaption>Thor: Love and Thunder é um futuro filme estadunidense de super-herói de 2022 baseado no personagem
+            Thor, da Marvel Comics.</figcaption>
+    </figure>
+    <h2 id="cad">Cadastre-se:</h2>
+    <form class="clear" action="mailto:jordandouglas8515@gmail.com" method="post" autocomplete="on">
+        <fieldset>
+            <label for="nome1">Nome Completo:</label><br>
+            <input type="text" id="nome1" name="nome" value="" required
+                placeholder="Exemplo: Jordan Douglas Rosa de Melo">
+        </fieldset>
+
+        <br>
+        <fieldset id="est1">
+            <label for="data">Data de nascimento:</label><br>
+            <input type="date" name="data" id="data" value="" required max="2010-06-08">
+
+        </fieldset>
+        <br>
+        <fieldset id="est2">
+            <label>
+                Estado Civil:
+                <br>
+                <select name="est_civil">
+                    <option value="select" selected>Selecionar </option>
+                    <option value="Casado">Casado</option>
+                    <option value="Viuvo">Viuvo</option>
+                    <option value="Solteiro">Solteiro</option>
+                    <option value="Divorciado">Divorciado</option>
+                </select>
+            </label>
+        </fieldset>
+        <br>
+        <fieldset class="clear" id="est3">
+
+            <label for="email">E-mail para cadastro:</label><br>
+            <input type="email" name="email" id="email" value="" required placeholder="Exemplo: addresABC@gmail.com">
+            <br>
+            <br>
+
+            <label for="senha">Senha para cadastro:</label><br>
+            <input type="password" name="passwd" id="senha" value="" required placeholder="Exemplo: 3214AWd#4"
+                maxlength="9">
+        </fieldset>
+        <br>
+        <fieldset id="est4">
+            <p>Escolha um gênero de sua preferência:</p>
+            <input type="checkbox" name="preferencia" id="acao" value="Ação">
+            <label class="font" for="acao">- Ação</label><br>
+            <input type="checkbox" name="preferencia" id="aventura" value="Aventura">
+            <label class="font" for="aventura">- Aventura</label><br>
+            <input type="checkbox" name="preferencia" id="comedia" value="Comédia">
+            <label class="font" for="comedia">- Comédia</label><br>
+            <input type="checkbox" name="preferencia" id="drama" value="Drama">
+            <label class="font" for="drama">- Drama</label><br>
+            <input type="checkbox" name="preferencia" id="ficcao" value="Ficção Científica">
+            <label class="font" for="ficcao">- Ficção Científica</label><br>
+            <input type="checkbox" name="preferencia" id="terror" value="Terror">
+            <label class="font" for="terror">- Terror</label><br>
+            <input type="checkbox" name="preferencia" id="romance" value="Romance">
+            <label class="font" for="romance">- Romance</label><br>
+            <input type="checkbox" name="preferencia" id="musical" value="Musical">
+            <label class="font" for="musical">- Musical</label><br>
+
+        </fieldset>
+
+        <br>
+        <fieldset>
+            <label class="clear" for="area">Informe a sua opnião:</label><br>
+            <textarea name="message" id="area" cols="60" rows="15" minlength="5"></textarea>
+        </fieldset>
+        <br>
+        <input type="checkbox" name="termos" id="term" value="Musical" required>
+        <label class="font" for="term">Declaro que autorizo o compartilhamento das informações preenchidas a
+            cima.</label><br>
+        <br>
+        <fieldset>
+            <input class="bt bt-lj" type="submit" value="Enviar">
+            <input class="bt bt-lj" type="reset" value="Limpar">
+            <input class="bt bt-lj" type="button" value="Imprimir" onclick="print()">
+        </fieldset>
+        <br>
+    </form>
+</body>
+</html>
